@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OZOG VIAL</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<!-- CSS STYLE -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- GOOGLE FONTS - ROBOTO CONDENSED-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- RESPONSIVE DESIGN-->
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="row top">
+			<!-- BRAND -->
+			<div class="col-md-4"><a href="#home" data-ancla="home" class="off">
+				<img src="images/Ozog.png" alt="" class="logo"></a></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-5">
+				<ul class='botonera'>
+					<li><a href="#nosotros" data-ancla="nosotros">Nosotros</a></li>
+					<li><a href="#servicios" data-ancla="servicios">Porque elegirnos?</a></li>
+					<li><a href="#contacto" data-ancla="contacto">Contacto</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="principal vertical-centered-text" id="home">
+	<div class="col-md-8 cta"><h1><span style="color: #000000">OZOG</span><span style="color: #eabd0c"> VIAL</span></h1>
+			<h4>Ingenieria y Servicios Viales</h4>
+			<a  href="mailto:ozogvial@gmail.com" class="btn btn-primary orange">Escribinos</a>
+	</div>
+</div>
+
+<div class="nosotros orange" id="nosotros">
+	<div class="container">
+		<h1>Sobre nosotros</h1>
+		<p>Somos una empresa creada con el objetivo de atender las necesidades del sector de la construcción. Abocados a la realización de obras viales, civiles, hidráulicas y de saneamiento así como también atendiendo las necesidades de alquiler de equipos y maquinaria pesada, destinada a movimientos de suelo y servicios para empresas constructoras, empresas agrícolas y gubernamentales.</p>
+	</div>
+</div>
+
+
+<div class="container servicios" id="servicios">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Porque elegirnos?</h1>
+		</div>
+	</div>
+	<div class="row images">
+		<div class="col-md-3">
+			<img src="images/confianza.svg" alt="">
+			<h3>Confianza</h3>
+			<p>Profesionalidad y compromiso en nuestros servicios.</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/rapidez.svg" alt="">
+			<h3>Rápidez</h3>
+			<p>El tiempo es nuestro activo más importante.</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/ecologia.svg" alt="">
+			<h3>Ecología</h3>
+			<p>Comprometidos con el medio ambiente reciclamos (plastico, baterias, etc) en la construcción de nuestras obras.</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/buen trato.svg" alt="">
+			<h3>Buen trato</h3>
+			<p>Aptitud y bienestar con nuestros empleados y clientes.</p>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	<div class="container" id="contacto">
+		<div class="row">
+			<div class="col-md-12">
+					<h1>Contacto</h1><br><br>
+
+			</div>
+		</div>
+		<div class="row social">
+		<div class="col-3"></div>	
+					<div class="col-2">
+						<a href="mailto:ozogvial@gmail.com"><img src="images/001-mail.svg" alt=""></a></div>
+
+					<div class="col-2">
+						<a target="blank" href="https://es-la.facebook.com/pages/category/Company/Ozog-Vial-481119511978949/"  target="_blank"><img src="images/002-facebook-logo.svg" alt=""></a></div>
+
+
+					<div class="col-2">
+						<a target="_blank" href="https://www.instagram.com/ozogvial/" ><img src="images/003-instagram-social-network-logo-of-photo-camera.svg" alt=""></a></div>	
+	</div><br><br>
+	<div class="copyright" id="derechos">
+		<div class="derechos">
+			<p>Copyright Ozog Vial © Todos los Derechos Reservados</p>
+		</div>
+	</div>
+</footer>
+<!-- BUTTONS RESPONSIVE-->
+<script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>
+	// A $( document ).ready() block.
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+</script>
+</body>
+</html>
